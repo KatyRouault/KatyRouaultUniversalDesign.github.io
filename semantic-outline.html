@@ -4,18 +4,82 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intitial-scale=1.0">
         <title>Semantic html outline</title>
-        <style></style>
+        <link rel="stylesheet" href="css/semantic-outline.css">
     </head>
     <body>
         <header>
-            <h1>Semantic html5 outline</h1>
+            <h1>Wikipedia</h1>
         </header>
         <nav>
+            <h2 class="sr-only">Navigation</h2>
             <ul><!--links unordered-->
-                <li><a href="#">LINK 1</a></li><!--ink and # is dummy link so the page with load but to nothing-->
-                <li><a href="#">LINK 2</a></li>
-                <li><a href="#">LINK 3</a></li>
+                <li><a href="#Top">(Top)</a></li><!--ink and # is dummy link so the page with load but to nothing-->
+                <li><a href="#Etymology">Etymology</a></li>
+                <li><a href="#Taxonomy">Taxonomy</a></li><!--anchor text to go down on a scroll page-->
+                <li><a href="Genome">Genome</a></li>
+                <li><a href="Life-cycle">Life cycle</a>
+                    <ul>
+                        <li><a href="Egg">Egg</a></li>
+                        <li><a href="Larva">Larva</a></li>
+                        <li><a href="Pupa">Pupa</a></li>
+                        <li><a href="Adult">Adult</a></li>
+                        <li><a href="Male">Male</a></li>
+                        <li><a href="Female">Female</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
+        <main>
+            <section id="Top">
+                <h2>Monarch butterfly</h2>
+                <p>The monarch butterfly or simply monarch (Danaus plexippus) is a milkweed butterfly (subfamily Danainae) in the family Nymphalidae.[6] Other common names, depending on region, include milkweed, common tiger, wanderer, and black-veined brown.[7] It is among the most familiar of North American butterflies and an iconic pollinator,[8] although it is not an especially effective pollinator of milkweeds.[9] Its wings feature an easily recognizable black, orange, and white pattern, with a wingspan of 8.9–10.2 cm (3.5–4.0 in).[10] A Müllerian mimic, the viceroy butterfly, is similar in color and pattern, but is markedly smaller and has an extra black stripe across each hindwing.</p>
+                <p>The eastern North American monarch population is notable for its annual southward late-summer/autumn instinctive migration from the northern and central United States and southern Canada to Florida and Mexico.[6] During the fall migration, monarchs cover thousands of miles, with a corresponding multigenerational return north in spring. The western North American population of monarchs west of the Rocky Mountains often migrates to sites in southern California, but have been found in overwintering Mexican sites, as well.[11][12] Non-migratory populations are found further south in the Americas, and in parts of Europe, Oceania, and Southeast Asia.</p>
+                <figure>
+                    <img src="" width="100px" height="100px" alt="description"><!--put the actual image size in the height and width-->
+                    <figcaption>Example of a Hipster</figcaption>
+                </figure>
+                <aside>
+                    <h3 id="hipster links">Top Hipster Sites</h3>
+                    <ul>
+                        <li><a href="#">they call me hipster</a></li>
+                    </ul>
+                </aside>
+            </section>
+            <section id="Etymology">
+                <h2>Etymology</h2>
+                <p>The name "monarch" is believed to have been given in honor of King William III of England, as the butterfly's main color is that of the king's secondary title, Prince of Orange.[13] The monarch was originally described by Carl Linnaeus in his Systema Naturae of 1758 and placed in the genus Papilio.[14] In 1780, Jan Krzysztof Kluk used the monarch as the type species for a new genus, Danaus. Although works published between at least 1883 and 1944 identified the species as Anosia plexippus,[15] Anosia was generally considered a subgenus of Danaus.[16]</p>
+                <p>Danaus (Ancient Greek Δαναός), a great-grandson of Zeus, was a mythical king in Egypt or Libya, who founded Argos; Plexippus (Πλήξιππος) was one of the 50 sons of Aegyptus, the twin brother of Danaus. In Homeric Greek, his name means "one who urges on horses", i.e., "rider" or "charioteer".[17] In the tenth edition of Systema Naturae, at the bottom of page 467,[18] Linnaeus wrote that the names of the Danai festivi, the division of the genus to which Papilio plexippus belonged, were derived from the sons of Aegyptus. Linnaeus divided his large genus Papilio, containing all known butterfly species, into what we would now call subgenera. The Danai festivi formed one of the "subgenera", containing colorful species, as opposed to the Danai candidi, containing species with bright white wings. Linnaeus wrote: "Danaorum Candidorum nomina a filiabus Danai Aegypti, Festivorum a filiis mutuatus sunt." (English: "The names of the Danai candidi have been derived from the daughters of Danaus, those of the Danai festivi from the sons of Aegyptus.").</p>
+                <p>Robert Michael Pyle suggested Danaus is a masculinized version of Danaë (Greek Δανάη), Danaus's great-great-granddaughter, to whom Zeus came as a shower of gold, which seemed to him a more appropriate source for the name of this butterfly.[19]</p>
+            </section>
+            <section id="Taxonomy">
+                <h2>Taxonomy</h2>
+                <p>Monarchs belong to the subfamily Danainae of the family Nymphalidae. Danainae was formerly considered a separately family Danaidae.[20] The three species of monarch butterflies are:</p>
+                <ul>
+                    <li>D. plexippus, described by Linnaeus in 1758, is the species known most commonly as the monarch butterfly ranging from North America to northern South America. Its range extends worldwide, including Hawaii, Australia, New Zealand, Spain, and the Pacific Islands.</li>
+                    <li>D. erippus, the southern monarch, was described by Pieter Cramer in 1775. This species is found in tropical and subtropical latitudes of South America, mainly in Brazil, Uruguay, Paraguay, Argentina, Bolivia, Chile, and southern Peru. The South American monarch and the North American monarch may have been one species at one time. Some researchers believe the southern monarch separated from the monarch's population some two million years ago, at the end of the Pliocene. Sea levels were higher, and the entire Amazonas lowland was a vast expanse of brackish swamp that offered limited butterfly habitat.[16]</li>
+                    <li>D. cleophile, the Jamaican monarch, described by Jean-Baptiste Godart in 1819, ranges from Jamaica to Hispaniola.[2]</li>
+                </ul>
+                <p>Six subspecies and two color morphs of D. plexippus have been identified:[7]</p>
+                <ul>
+                    <li>D. p. plexippus – nominate subspecies, described by Linnaeus in 1758, is the migratory subspecies known from most of North America.
+                        <ul>
+                            <li>D. p. p. "form nivosus", the white monarch commonly found on Oahu, Hawaii, and rarely in other locations.[21]</li>
+                            <li>D. p. p. (as yet unnamed) – a color morph lacking some wing vein markings.[22]</li>
+                        </ul>
+                    </li>
+                    <li>D. p. nigrippus (Richard Haensch, 1909) – South America - as forma: Danais [sic] archippus f. nigrippus. Hay-Roe et al. in 2007 identified this taxon as a subspecies[23]</li>
+                    <li>D. p. megalippe (Jacob Hübner, [1826]) – nonmigratory subspecies, and is found from Florida and Georgia southwards, throughout the Caribbean and Central America to the Amazon River.</li>
+                    <li>D. p. leucogyne (Arthur G. Butler, 1884) − St. Thomas</li>
+                    <li>D. p. portoricensis Austin Hobart Clark, 1941 − Puerto Rico</li>
+                    <li>D. p. tobagi Austin Hobart Clark, 1941 − Tobago</li>
+                </ul>
+                <p>The population level of the white morph in Oahu is nearing 10%. On other Hawaiian islands, the white morph occurs at a relatively low frequency. White monarchs (D. p. p. "form nivosus") have been found throughout the world, including Australia, New Zealand, Indonesia, and the United States.[21] However, some taxonomists disagree on these classifications.[16][23]</p>
+            </section>
+            <section id="Genome">
+                <p>The monarch was the first butterfly to have its genome sequenced.[24]: 12  The 273-million-base pair draft sequence includes a set of 16,866 protein-coding genes. The genome provides researchers insights into migratory behavior, the circadian clock, juvenile hormone pathways, and microRNAs that are differentially expressed between summer and migratory monarchs.[25] More recently, the genetic basis of monarch migration and warning coloration has been described.[26]</p>
+                <p>No genetic differentiation exists between the migratory populations of eastern and western North America.[24]: 16  Recent research has identified the specific areas in the genome of the monarch that regulate migration. No genetic difference is seen between a migrating and nonmigrating monarch, but the gene is expressed in migrating monarchs, but not expressed in nonmigrating monarchs.[27]</p>
+                <p>A 2015 publication identified genes from wasp bracoviruses in the genome of the North American monarch[28] leading to articles about monarch butterflies being genetically modified organisms.[29]</p>
+            </section>
+        </main>
     </body>
 </html>
