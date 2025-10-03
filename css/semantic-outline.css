@@ -1,11 +1,17 @@
-@import url{}/*font link embeded*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 /*Something else check slides for check phone I took a pic its in body*/
 /*use inspect and style to use up and down arrows and option to change text size and more in lvier server before u change it*/
 
 body {
-    background-color: rgb(255, 255, 255);
-    font-fmaily:
+    background-color: #ffffff;
+    color: #222222;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
+
 .sr-only{
     border:0;
     clip: rect(0,0,0,0);
@@ -21,6 +27,9 @@ body {
 .container {
     margin: 0 auto;
     max-width: 960px;
+    padding: 1rem;
+    margin-left: 260px;   /* space for nav */
+    margin-right: 270px;  /* space for aside */
 }
 
 p {
@@ -32,8 +41,9 @@ p {
 h1,
 h2,
 h3 {
-    font-family: '', serif;
-    /*add a serif font to this maybe*/
+    font-family: 'Old Standard TT', serif; /* headings = serif */
+    margin: 16px 0 8px;
+    font-weight: bold;
 }
 
 h1 {
@@ -48,26 +58,47 @@ h2 {
     list-style: none;
 }
 
-/*nav ul li meansif its a list in an unordered inside of a nav that what is getting the css*/
-/* 
-nav ul li {
-    list-item: none;
-}*/
-/*
-nav ul li a:link {
-    color: white;
+nav {
+    position: fixed;
+    top: 100px;      /* adjust as needed */
+    left: 20px;      /* distance from left edge */
+    width: 200px;    /* fixed width for nav */
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+/* Basic navigation + link styles */
+nav ul li a {
+    text-decoration: none;       /* remove underline */
+    font-weight: 500;
+    color: #004080;              /* accessible dark blue */
+    transition: color 0.2s ease; /* smooth hover effect */
 }
 
 nav ul li a:visited {
-    color
+    color: #5a2d82; /* purple-ish for visited links */
 }
 
-nav ul li a:hover{
-    color
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #4615a0; /* high contrast hover/focus color */
+    outline: none;  /* remove default outline */
 }
 
-nav ul li a:active{
-    color
+nav ul li a:active {
+    color: #ff6600; /* "pressed" state */
 }
-*/
+
+aside {
+    float: right;        /* keep it on the right */
+    width: 250px;        /* sidebar width */
+    margin-left: 20px;   /* space between main content and sidebar */
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+
 /* color.adobe.com helps with picking colors and what goes together ALSO USE THE ACCESIBILITY TOOLS TO PICK GOOD CONTRAST COLORS*/
