@@ -1,5 +1,10 @@
-body{
+@import url{}/*font link embeded*/
+/*Something else check slides for check phone I took a pic its in body*/
+/*use inspect and style to use up and down arrows and option to change text size and more in lvier server before u change it*/
+
+body {
     background-color: rgb(255, 255, 255);
+    font-fmaily:
 }
 .sr-only{
     border:0;
@@ -12,3 +17,57 @@ body{
     white-space: nowrap;
     width: 1px;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+p {
+    line-height: 1.5em;  /*everytime we talk about a font its em*/
+    text-indent: 50px; /*don't have to do this only if I want*/
+    margin-bottom: 25px; /*adds space to the bottom the the text inbetween paragraphs*/
+}
+
+h1,
+h2,
+h3 {
+    font-family: '', serif;
+    /*add a serif font to this maybe*/
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+.no-bullet { /*add this ad a class to any list i want to not have bullets*/
+    list-style: none;
+}
+
+/*nav ul li meansif its a list in an unordered inside of a nav that what is getting the css*/
+/* 
+nav ul li {
+    list-item: none;
+}*/
+/*
+nav ul li a:link {
+    color: white;
+}
+
+nav ul li a:visited {
+    color
+}
+
+nav ul li a:hover{
+    color
+}
+
+nav ul li a:active{
+    color
+}
+*/
+/* color.adobe.com helps with picking colors and what goes together ALSO USE THE ACCESIBILITY TOOLS TO PICK GOOD CONTRAST COLORS*/
