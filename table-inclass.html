@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td {
+            border-collapse: collapse;
+        }
+
+        table {
+            margin-bottom: 30px;
+        }
+
+        td {
+            border: 2px solid red;
+            text-align: center;
+            width: 92px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>Accessible Table</h1>
+   </header> 
+    <main>
+        <section>
+            <h2>Table Example</h2>
+            <table>
+                <caption>Animals that can kill you</caption><!--This gives a little for the table and make a screen reader read it better-->
+        <thead>
+            <tr>
+                <th scope="col">Lions</th><!--table head is thead and tr is table row-->
+                <th scope="col">Tigers</th>
+                <th scope="col">Bears</th>
+            </tr>
+        </thead> 
+        <tbody>  
+            <tr>
+                <td>Simba</td>
+                <td>Lion</td>
+                <td>Winney</td>
+            </tr>
+            <tr>
+                <td>cecil</td>
+                <td>tygra</td>
+                <td>baloo</td>
+            </tr>
+            <tr>
+                <td>Mufasa</td>
+                <td>Tony</td>
+                <td>Yogi</td>
+            </tr>
+        </tbody> 
+            </table>
+        </section>
+    </main>
+</body>
+</html>
