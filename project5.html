@@ -103,7 +103,7 @@
                         </label>
                         <label for="email">
                             What is your email?     <span aria-hidden=”true” class="material-icons">email</span>
-                            <input type="email" id="email">
+                            <input type="email" id="email" autocomplete="email">
                         </label>
                         <label for="website">
                             What is the wikipedia website of your favorite apple?     <span aria-hidden=”true” class="material-icons">web</span>
@@ -111,7 +111,7 @@
                         </label>
                         <label for="phone">
                             What is your phone number?     <span aria-hidden=”true” class="material-icons">phone</span>
-                        <input type="tel" id="phone" minlength="10" placeholder="555-555-5555">
+                        <input type="tel" id="phone" minlength="10" placeholder="555-555-5555" autocomplete="tel">
                         </label>
                         <label for="age">
                             Age?
@@ -120,7 +120,7 @@
                         <label for="password">
                             Create a password?
                             <input type="text" id="password" maxlength="20" minlength="5"
-                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+!=]).*" required>
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+!=]).*" autocomplete="new-password" required>
                             <ul class="inputRequirements">
                                 <li>must be at least 5 characters and contain uppercase, lowercase, special character</li>
                             </ul>
