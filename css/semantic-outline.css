@@ -1,155 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+/*Something else check slides for check phone I took a pic its in body*/
+/*use inspect and style to use up and down arrows and option to change text size and more in lvier server before u change it*/
 
-/* Global styles */
 body {
-  background-color: #ffffff;
-  color: #222222;
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-.sr-only {
-  border: 0;
-  clip: rect(0,0,0,0);
-  height: 1px;
-  margin: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+.sr-only{
+    border:0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #f5f7fa;
-  border-bottom: 1px solid #ddd;
-}
+.content {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-left: 240px; /* space for nav */
+    margin-right: 1rem; /* small buffer on right */
+    max-width: calc(100% - 260px); /* fill remaining space after nav */
+    box-sizing: border-box;
+  }  
 
-/* Container layout using Flexbox */
-main {
-  display: flex;
-  justify-content: space-between;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem;
-  gap: 1.5rem;
-}
+  article {
+    flex: 2;  /* main area gets more space */
+  }
+  
+  aside {
+    flex: 1;  /* sidebar smaller */
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 1px solid #ddd;
+    
+  }
 
-/* Main content */
-.article-content {
-  flex: 1;
-  min-width: 0;
-}
+  aside {
+    flex: 0 0 20%; /* about 1/5 of the content area */
+    background: #f9f9f9;
+    padding: 1rem;
+    border-left: 2px solid #eee;
+  }  
 
 p {
-  line-height: 1.5em;
-  text-indent: 50px;
-  margin-bottom: 25px;
+    line-height: 1.5em;  /*everytime we talk about a font its em*/
+    text-indent: 50px; /*don't have to do this only if I want*/
+    margin-bottom: 25px; /*adds space to the bottom the the text inbetween paragraphs*/
 }
 
-/* Headings */
-h1, h2, h3 {
-  font-family: 'Old Standard TT', serif;
-  font-weight: bold;
+h1,
+h2,
+h3 {
+    font-family: 'Old Standard TT', serif; /* headings = serif */
+    margin: 16px 0 8px;
+    font-weight: bold;
 }
 
 h1 {
-  font-size: 1.8em;
+    font-size: 1.8em;
 }
 
 h2 {
-  font-size: 1.4em;
+    font-size: 1.4em;
 }
 
-/* Lists */
-.no-bullet {
-  list-style: none;
+.no-bullet { /*add this ad a class to any list i want to not have bullets*/
+    list-style: none;
 }
 
-/* Navigation */
 nav {
-  position: fixed;
-  top: 100px;
-  left: 20px;
-  width: 200px;
-  max-height: 80vh;
-  overflow-y: auto;
-  padding: 1rem;
+    position: fixed;
+    top: 100px;      /* adjust as needed */
+    left: 20px;      /* distance from left edge */
+    width: 200px;    /* fixed width for nav */
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 1rem;
 }
 
-nav ul {
-  padding-left: 0;
-}
-
-nav ul li {
-  margin-bottom: 0.5rem;
-}
-
+/* Basic navigation + link styles */
 nav ul li a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #004080;
-  transition: color 0.2s ease;
+    text-decoration: none;       /* remove underline */
+    font-weight: 500;
+    color: #004080;              /* accessible dark blue */
+    transition: color 0.2s ease; /* smooth hover effect */
 }
 
 nav ul li a:visited {
-  color: #5a2d82;
+    color: #5a2d82; /* purple-ish for visited links */
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-  color: #4615a0;
-  outline: none;
+    color: #4615a0; /* high contrast hover/focus color */
+    outline: none;  /* remove default outline */
 }
 
 nav ul li a:active {
-  color: #ff6600;
+    color: #ff6600; /* "pressed" state */
 }
 
-/* Sidebar */
 aside {
-  flex: 0 0 250px;
-  background-color: #f5f7fa;
-  padding: 1rem;
-  border-left: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  font-size: 0.9rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 1px solid #ddd;
+    font-size: 0.9rem;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #555;
-  padding: 1rem;
-  border-top: 1px solid #ddd;
-  background-color: #f9f9f9;
-}
 
-/* Responsive */
-@media (max-width: 900px) {
-  main {
-    flex-direction: column;
-  }
-
-  nav {
-    position: static;
-    width: auto;
-    margin: 1rem 0;
-  }
-
-  aside {
-    width: auto;
-  }
-
-  .article-content {
-    text-indent: 0;
-  }
-}
+/* color.adobe.com helps with picking colors and what goes together ALSO USE THE ACCESIBILITY TOOLS TO PICK GOOD CONTRAST COLORS*/
