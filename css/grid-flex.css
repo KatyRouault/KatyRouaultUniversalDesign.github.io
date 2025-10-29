@@ -10,7 +10,7 @@
 }
 
 body {
-  background: yellow;
+  background: #AF9BFF;
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -49,7 +49,7 @@ footer {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background: rgb(175, 222, 176);
+  background: white;
   display: grid;
   width: 100vw;
   height: 100vh;
@@ -64,11 +64,11 @@ footer {
   "footy     footy     footy";
 }
 
-header {grid-area: heady; background:rgb(254, 218, 175);}
-nav {grid-area: navvy; background:rgb(232, 206, 236);}
-main {grid-area: mainy; background: rgb(240, 234, 182); max-height: 100%;}
-#aside1 {grid-area: aside1; background: rgb(241, 202, 174);}
-#aside2 {grid-area: aside2; background: rgb(191, 226, 246);}
+header {grid-area: heady; background:#DBE0FF;}
+nav {grid-area: navvy; background:#E2DBFF;}
+main {grid-area: mainy; background: #DBEBFF; max-height: 100%;}
+#aside1 {grid-area: aside1; background: #FADBFF;}
+#aside2 {grid-area: aside2; background: #EEDBFF;}
 footer {grid-area: footy; background: rgb(171, 171, 171);}
 
 nav ul {
@@ -122,5 +122,3 @@ nav ul li a {
 
 }
 }
-
-background-image:
