@@ -105,10 +105,10 @@ grid-template-columns:
    1fr;
 grid-template-areas:
   "heady"
+  "navvy"
   "mainy"
   "aside1"
   "aside2"
-  "navvy"
   "footy";
 }
 nav ul {
