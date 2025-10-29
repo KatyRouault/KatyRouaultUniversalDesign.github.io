@@ -94,7 +94,8 @@ footer {grid-area: footy; background: rgb(255, 234, 253);}
 nav ul {
 display: flex;
 flex-flow: row nowrap;
-justify-content: space-around;
+justify-content: center;
+gap: 60px;
 }
 
 nav ul li {
@@ -131,7 +132,8 @@ grid-template-areas:
 }
 nav ul {
   flex-flow: column nowrap;
-  text-align: center;
+  justify-content: center;
+  gap: 10px;
 }
 nav ul li a {
   display: block;
