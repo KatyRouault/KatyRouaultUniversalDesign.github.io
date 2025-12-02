@@ -73,7 +73,7 @@ nav {
   align-items: center;     /* centers logo + ul vertically */
   justify-content: space-between;
   height: 70px;            /* fixed nav height */
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 main img { 
@@ -146,7 +146,7 @@ nav ul {
   flex-flow: row nowrap;
   align-items: center;     
   justify-content: right;
-  gap: 20px;
+  gap: 10px;
   margin: 0;
   padding: 0;
   
