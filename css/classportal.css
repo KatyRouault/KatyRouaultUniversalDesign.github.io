@@ -49,8 +49,8 @@ h3 {font-size: 1.5em;}
 
 header,
 nav,
+#about,
 main,
-#labs,
 aside,
 footer {
   padding: 1.5em;
@@ -90,7 +90,7 @@ nav {
   padding: 0 10px;
 }
 
-main img { 
+img { 
   display: block;
   margin: 0 auto;
   justify-self: center;
@@ -137,7 +137,7 @@ grid-template-columns:
 grid-template-areas:
   "heady"
   "navvy"
-  "mainy"
+  "about"
   "aside1"
   "aside2"
   "labs"
@@ -146,7 +146,7 @@ grid-template-areas:
 
 header {grid-area: heady; background:rgb(247, 246, 241);}
 nav {grid-area: navvy; background:rgb(255, 234, 253);}
-main {grid-area: mainy; background: rgb(245, 244, 242); max-height: 100%;}
+#about {grid-area: about; background: rgb(245, 244, 242); max-height: 100%;}
 #aside1 {grid-area: aside1; background: rgb(247, 246, 241);}
 #aside2 {grid-area: aside2; background: rgb(247, 246, 241);}
 #labs {grid-area: labs; background: rgb(245, 244, 242);}
@@ -181,7 +181,7 @@ grid-template-columns:
 grid-template-areas:
   "heady heady"
   "navvy navvy"
-  "mainy mainy"
+  "about about"
   "aside1 aside2"
   "labs labs"
   "footy footy";
@@ -220,9 +220,9 @@ nav ul li {
   grid-template-areas:
   "heady     heady     heady"
   "navvy     navvy     navvy"
-  "aside1    mainy     aside2"
-  "aside1    mainy     aside2"
-  "aside1    mainy     aside2"
+  "aside1    about     aside2"
+  "aside1    about     aside2"
+  "aside1    about     aside2"
   "labs      labs      labs"
   "footy     footy     footy";
 }
