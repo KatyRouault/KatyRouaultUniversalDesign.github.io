@@ -50,7 +50,7 @@ h3 {font-size: 1.5em;}
 header,
 nav,
 #about,
-#labs,
+main,
 aside,
 footer {
   padding: 1.5em;
@@ -69,7 +69,7 @@ a{
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-#labs a{
+main a{
   color: rgb(255, 255, 255);
   padding: 8px 8px;      
   border-radius: 4px;      
@@ -149,7 +149,7 @@ nav {grid-area: navvy; background:rgb(255, 234, 253);}
 #about {grid-area: about; background: rgb(245, 244, 242); max-height: 100%;}
 #aside1 {grid-area: aside1; background: rgb(247, 246, 241);}
 #aside2 {grid-area: aside2; background: rgb(247, 246, 241);}
-#labs {grid-area: labs; background: rgb(245, 244, 242);}
+main {grid-area: labs; background: rgb(245, 244, 242);}
 footer {grid-area: footy; background: rgb(255, 234, 253);}
 
 nav img{
