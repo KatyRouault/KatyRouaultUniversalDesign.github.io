@@ -29,6 +29,9 @@ p {
   line-height: 1.8em;
   font-size: 1.2em;
 }
+#labs a {
+  margin-bottom: 4em;
+}
 
 h1 {font-size: 2.5em;}
 
@@ -58,11 +61,12 @@ footer {
 }
 
 a{
-  color: rgb(0, 0, 0);
-  background-color: #fff3fd;
+  color: rgb(255, 255, 255);
+  background-color: #b647a5;
   padding: 8px 8px;      
   border-radius: 4px;      
   display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 aside h2{
@@ -71,9 +75,9 @@ aside h2{
 
 nav {
   display: flex;
-  align-items: center;     /* centers logo + ul vertically */
+  align-items: center;     
   justify-content: space-between;
-  height: 70px;            /* fixed nav height */
+  height: 70px;            
   padding: 0 10px;
 }
 
