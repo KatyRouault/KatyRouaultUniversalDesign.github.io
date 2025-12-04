@@ -145,10 +145,10 @@ grid-template-areas:
 
 header {grid-area: heady; background:rgb(26, 140, 211);}
 nav {grid-area: navvy; background:rgb(191, 235, 255);}
-main {grid-area: mainy; background: rgb(243, 251, 255); max-height: 100%;}
-#aside1 {grid-area: aside1; background: rgb(212,241,255);}
-#aside2 {grid-area: aside2; background: rgb(247, 246, 241);}
-footer {grid-area: footy; background: rgb(255, 234, 253);}
+main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
+#aside1 {grid-area: aside1; background: rgb(228, 246, 255);}
+#aside2 {grid-area: aside2; background: rgb(191, 235, 255);}
+footer {grid-area: footy; background: rgb(228, 246, 255);}
 
 nav img{
   height: auto;
