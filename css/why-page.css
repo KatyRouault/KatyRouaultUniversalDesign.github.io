@@ -33,7 +33,7 @@ p {
 h1 {font-size: 3.5em;
     font-weight: 800;
   color: #FFD21F;
-  -webkit-text-stroke: 1px #B31200;
+  -webkit-text-stroke: 1px #CC1F00;
   text-shadow:
     0 0 4px rgba(0,0,0,.15),
     2px 2px 0 #CC1F00;                 /* fill color */
@@ -77,6 +77,35 @@ a{
 aside h2{
   color: #0a164e;
 }
+
+#star {
+    font-size: 40px;
+    color: #FFD21F;
+    transition: 0.3s ease;
+    -webkit-text-stroke: 2px #CC1F00; /* outline */
+  }
+  
+#star:hover {
+    color: rgb(228, 246, 255);
+  }
+
+
+
+footer ul {  
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+footer ul li {
+      list-style: none
+    }
+
 
 nav {
   display: flex;
@@ -148,7 +177,7 @@ main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
 #aside2 {grid-area: aside2; background: rgb(191, 235, 255);}
 footer {grid-area: footy; background: rgb(228, 246, 255);}
 
-nav img{
+nav img {
   height: auto;
   width: 80px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
