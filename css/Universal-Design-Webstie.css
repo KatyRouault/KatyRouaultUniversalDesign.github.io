@@ -10,7 +10,7 @@
 }
 
 body {
-  background: rgb(255, 255, 255);
+  background: rgb(177, 229, 255);
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -30,11 +30,22 @@ p {
   font-size: 1.2em;
 }
 
-h1 {font-size: 2.5em;}
+h1 {font-size: 3.5em;
+    font-weight: 800;
+  color: #FFD21F;
+  -webkit-text-stroke: 1px #B31200;
+  text-shadow:
+    0 0 4px rgba(0,0,0,.15),
+    2px 2px 0 #CC1F00;                 /* fill color */
+    }
 
-h2 {font-size:2.0em;}
+h2 {font-size:2.0em;
+    color: #CC1F00;
+}
 
-h3 {font-size: 1.5em;}
+h3 {font-size: 1.5em;
+    color: #0a164e; 
+}
 
 
 
@@ -56,16 +67,15 @@ footer {
   /*border: 1px rgb(195, 195, 195) solid;*/
 }
 
+
 a{
   color: rgb(0, 0, 0);
-  background-color: #fff3fd;
-  padding: 8px 8px;      
-  border-radius: 4px;      
+  padding: 8px 8px;          
   display: inline-block;
 }
 
 aside h2{
-  color: rgb(61, 61, 61);
+  color: #0a164e;
 }
 
 nav {
@@ -74,6 +84,15 @@ nav {
   justify-content: space-between;
   height: 70px;            /* fixed nav height */
   padding: 0 10px;
+  border-radius: 3em;
+  padding: 50px;
+}
+
+nav a {
+    color: #0a164e;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-decoration: none;
 }
 
 main img { 
@@ -92,10 +111,6 @@ aside p{
 header,
 footer {
   text-align: center;
-}
-
-li {
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .skip-link {
@@ -128,10 +143,10 @@ grid-template-areas:
   "footy";
 }
 
-header {grid-area: heady; background:rgb(247, 246, 241);}
-nav {grid-area: navvy; background:rgb(255, 234, 253);}
-main {grid-area: mainy; background: rgb(245, 244, 242); max-height: 100%;}
-#aside1 {grid-area: aside1; background: rgb(247, 246, 241);}
+header {grid-area: heady; background:rgb(26, 140, 211);}
+nav {grid-area: navvy; background:rgb(191, 235, 255);}
+main {grid-area: mainy; background: rgb(243, 251, 255); max-height: 100%;}
+#aside1 {grid-area: aside1; background: rgb(212,241,255);}
 #aside2 {grid-area: aside2; background: rgb(247, 246, 241);}
 footer {grid-area: footy; background: rgb(255, 234, 253);}
 
@@ -194,7 +209,6 @@ nav ul li {
 @media screen and (min-width: 1200px)  {
 .container {
   margin: 0 auto;
-  background: rgb(255, 255, 255);
   display: grid;
   width: 100vw;
   height: 100vh;
