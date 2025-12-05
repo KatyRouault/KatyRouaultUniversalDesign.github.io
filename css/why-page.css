@@ -210,13 +210,15 @@ main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
 #aside2 {grid-area: aside2; background: rgb(191, 235, 255);}
 footer {grid-area: footy; background: rgb(228, 246, 255);}
 
-nav {
-    padding: 15px;
+header, nav, main, aside, footer {
+    padding: 1.5em;
     margin: 5px;
-}
-header {
-    padding: 0px;
-}
+  }
+
+  header{
+    padding: 0;
+  }
+
 h1 {font-size: 2em;
     font-weight: 800;
   color: #FFD21F;
