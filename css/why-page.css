@@ -210,6 +210,13 @@ main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
 #aside2 {grid-area: aside2; background: rgb(191, 235, 255);}
 footer {grid-area: footy; background: rgb(228, 246, 255);}
 
+.menu-toggle {
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+    color: #0a164e;
+  }
+  
 header, nav, main, aside, footer {
     padding: 1.5em;
     margin: 5px;
@@ -228,16 +235,23 @@ h1 {font-size: 2em;
     1px 1px 0 #CC1F00;                 /* fill color */
     }
 
-nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;     
-  justify-content: right;
-  gap: 0px;
-  margin: 0;
-  padding: 0;
-  
-}
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgb(191, 235, 255);
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      
+      nav ul.show {
+        display: flex;
+      }
+      
+      .menu-toggle {
+        display: block;
+      }
 
 nav ul li {
   list-style: none
@@ -251,6 +265,19 @@ nav a {
 
 
 @media screen and (min-width: 620px) {
+
+    /* 👇 ADD THESE LINES HERE */
+    .menu-toggle {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex !important;
+      flex-direction: row;
+      background: none;
+      margin-top: 0;
+      padding: 0;
+    }
 .container {
 grid-template-columns:
    1fr 1fr;
