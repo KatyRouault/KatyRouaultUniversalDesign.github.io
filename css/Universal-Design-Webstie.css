@@ -325,12 +325,12 @@ main, aside{
     
     
     h1 {font-size: 3em;
-        font-weight: 800;
+        font-weight: 1000;
       color: #FFD21F;
-      -webkit-text-stroke: 1px #8F1500;
+      -webkit-text-stroke: 2px #8F1500;
       text-shadow:
         0 0 4px rgba(0,0,0,.15),
-        2px 2px 0 #8F1500;                 /* fill color */
+        2px 1px 0 #8F1500;                 /* fill color */
         }
     
     nav {
