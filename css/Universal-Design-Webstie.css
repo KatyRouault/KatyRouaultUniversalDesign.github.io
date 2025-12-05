@@ -30,14 +30,6 @@ p {
   font-size: 1.2em;
 }
 
-h1 {font-size: 3.5em;
-    font-weight: 800;
-  color: #FFD21F;
-  -webkit-text-stroke: 1px #B31200;
-  text-shadow:
-    0 0 4px rgba(0,0,0,.15),
-    2px 2px 0 #CC1F00;                 
-    }
 
 h2 {font-size:2.0em;
     color: #0a164e;
@@ -46,14 +38,6 @@ h2 {font-size:2.0em;
 h3 {font-size: 1.5em;
     color: #0a164e; 
 }
-
-
-
-/*nav img {
-  height: 32px;          
-  width: auto;           
-  object-fit: contain;
-} */
 
 header,
 nav,
@@ -82,7 +66,6 @@ nav {
   display: flex;
   align-items: center;     /* centers logo + ul vertically */
   justify-content: space-between;
-  height: 70px;            /* fixed nav height */
   padding: 0 10px;
   border-radius: 3em;
   padding: 50px;
@@ -164,112 +147,219 @@ main, aside{
 }
 
 .container {
-grid-template-columns:
-   1fr;
-grid-template-areas:
-  "heady"
-  "navvy"
-  "mainy"
-  "aside2"
-  "footy";
-}
-
-header {grid-area: heady; background:rgb(26, 140, 211);}
-nav {grid-area: navvy; background:rgb(191, 235, 255);}
-main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
-#aside2 {grid-area: aside2; background: rgb(191, 235, 255);}
-footer {grid-area: footy; background: rgb(228, 246, 255);}
-
-nav img{
-  height: auto;
-  width: 80px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;     
-  justify-content: right;
-  gap: 10px;
-  margin: 0;
-  padding: 0;
-  
-}
-
-nav ul li {
-  list-style: none
-}
-
-
-@media screen and (min-width: 620px) {
-.container {
-grid-template-columns:
-   1fr 1fr;
-grid-template-areas:
-  "heady heady"
-  "navvy navvy"
-  "mainy mainy"
-  "aside2 aside2"
-  "footy footy";
-}
-nav img{
-  height: auto;
-  width: 90px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;     
-  justify-content: right;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  
-}
-
-nav ul li {
-  list-style: none
-}
-}
-
-@media screen and (min-width: 1200px)  {
-.container {
-  margin: 0 auto;
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-columns:
-   1fr       2.5fr       1fr;
-  grid-template-areas:
-  "heady     heady     heady"
-  "navvy     navvy     navvy"
-  "mainy    mainy     mainy"
-  "mainy    mainy     mainy"
-  "mainy    mainy     mainy"
-  "aside2    aside2    aside2"
-  "footy     footy     footy";
-}
-nav img{
-  height: auto;
-  width: 90px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;     
-  justify-content: right;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  
-}
-
-nav ul li {
-  list-style: none
-}
-}
+    display: grid;
+    grid-template-columns:
+       1fr;
+    grid-template-areas:
+      "heady"
+      "navvy"
+      "mainy"
+      "aside2"
+      "footy";
+    }
+    
+    header {grid-area: heady; background:rgb(26, 140, 211);}
+    nav {grid-area: navvy; background:rgb(191, 235, 255);}
+    main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
+    #aside2 {grid-area: aside2; background: rgb(191, 235, 255);}
+    footer {grid-area: footy; background: rgb(228, 246, 255);}
+    
+    .menu-toggle {
+        font-size: 2em;
+        cursor: pointer;
+        display: none;
+        color: #0a164e;
+      }
+      
+    header, nav, main, aside, footer {
+        padding: 1.5em;
+        margin: 5px;
+      }
+    
+      header{
+        padding: 0;
+      }
+    
+    h1 {font-size: 2em;
+        font-weight: 800;
+      color: #FFD21F;
+      -webkit-text-stroke: 1px #CC1F00;
+      text-shadow:
+        0 0 4px rgba(0,0,0,.15),
+        1px 1px 0 #CC1F00;                 /* fill color */
+        }
+    
+        nav ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background: rgb(191, 235, 255);
+            margin-top: 10px;
+            border-radius: 10px;
+            padding: 10px;
+          }
+          
+          nav ul.show {
+            display: flex;
+          }
+          
+          .menu-toggle {
+            display: block;
+          }
+    
+    nav ul li {
+      list-style: none
+    }
+    
+    nav a {
+        font-size: 1em;
+        margin: 0px;
+        padding: 5px;
+    }
+    
+    
+    @media screen and (min-width: 620px) {
+    
+        /* 👇 ADD THESE LINES HERE */
+        .menu-toggle {
+          display: none;
+        }
+      
+        nav ul {
+          display: flex !important;
+          flex-direction: row;
+          background: none;
+          margin-top: 0;
+          padding: 0;
+        }
+    .container {
+    grid-template-columns:
+       1fr 1fr;
+    grid-template-areas:
+      "heady heady"
+      "navvy navvy"
+      "mainy mainy"
+      "mainy mainy"
+      "aside2 aside2"
+      "footy footy";
+    }
+    nav {
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    header {
+        padding: 10px;
+    }
+    
+    h1 {font-size: 2.2em;
+        font-weight: 800;
+      color: #FFD21F;
+      -webkit-text-stroke: 1px #CC1F00;
+      text-shadow:
+        0 0 4px rgba(0,0,0,.15),
+        2px 1px 0 #CC1F00;                 /* fill color */
+        }
+    
+    nav {
+        display: flex;
+        align-items: center;     /* centers logo + ul vertically */
+        justify-content: space-between;
+        padding: 0 10px;
+        border-radius: 3em;
+        padding: 20px;
+      }
+    
+    nav img{
+      height: auto;
+      width: 90px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    
+    nav ul {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;     
+      justify-content: right;
+      gap: 2px;
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    nav ul li {
+      list-style: none
+    }
+    }
+    
+    @media screen and (min-width: 1200px)  {
+    .container {
+      margin: 0 auto;
+      display: grid;
+      width: 100vw;
+      height: 100vw;
+      grid-template-columns:
+       1fr       2.5fr;
+      grid-template-areas:
+      "heady     heady     heady"
+      "navvy     navvy     navvy"
+      "mainy    mainy     mainy"
+      "mainy    mainy     mainy"
+      "mainy    mainy     mainy"
+      "aside2    aside2    aside2"
+      "footy     footy     footy";
+    }
+    
+    nav {
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    header {
+        padding: 10px;
+    }
+    
+    h1 {font-size: 2.5em;
+        font-weight: 800;
+      color: #FFD21F;
+      -webkit-text-stroke: 1px #CC1F00;
+      text-shadow:
+        0 0 4px rgba(0,0,0,.15),
+        2px 2px 0 #CC1F00;                 /* fill color */
+        }
+    
+    nav {
+        display: flex;
+        align-items: center;     /* centers logo + ul vertically */
+        justify-content: space-between;
+        padding: 0 10px;
+        border-radius: 3em;
+        padding: 10px;
+      }
+    
+    #aside1 .aside-content {
+        position: sticky;
+        top: 20px; /* distance from top */
+      }
+    
+    nav img{
+      height: auto;
+      width: 90px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    
+    nav ul {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;     
+      justify-content: right;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    nav ul li {
+      list-style: none
+    }
+    }

@@ -39,14 +39,6 @@ h3 {font-size: 1.5em;
     color: #0a164e; 
 }
 
-
-
-/*nav img {
-  height: 32px;          
-  width: auto;           
-  object-fit: contain;
-} */
-
 header,
 nav,
 main,
@@ -57,6 +49,16 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   /*border: 1px rgb(195, 195, 195) solid;*/
+}
+
+a{
+  color: rgb(0, 0, 0);
+  padding: 8px 8px;          
+  display: inline-block;
+}
+
+aside h2{
+  color: #0a164e;
 }
 
 main {
@@ -81,17 +83,6 @@ main {
 #aside1 li {
     padding-top: 20px;
    
-}
-
-
-a{
-  color: rgb(0, 0, 0);
-  padding: 8px 8px;          
-  display: inline-block;
-}
-
-aside h2{
-  color: #0a164e;
 }
 
 #star {
@@ -226,13 +217,13 @@ header, nav, main, aside, footer {
     padding: 0;
   }
 
-h1 {font-size: 2em;
+h1 {font-size: 2.5em;
     font-weight: 800;
-  color: #FFD21F;
-  -webkit-text-stroke: 1px #CC1F00;
-  text-shadow:
+    color: #FFD21F;
+    -webkit-text-stroke: 1px #CC1F00;
+    text-shadow:
     0 0 4px rgba(0,0,0,.15),
-    1px 1px 0 #CC1F00;                 /* fill color */
+    1px 1px 0 #CC1F00;                
     }
 
     nav ul {
@@ -263,16 +254,13 @@ nav a {
     padding: 5px;
 }
 
-
 @media screen and (min-width: 620px) {
-
-    /* 👇 ADD THESE LINES HERE */
     .menu-toggle {
       display: none;
     }
   
     nav ul {
-      display: flex !important;
+      display: flex;
       flex-direction: row;
       background: none;
       margin-top: 0;
@@ -284,8 +272,9 @@ grid-template-columns:
 grid-template-areas:
   "heady heady"
   "navvy navvy"
-  "aside1 mainy"
-  "aside1 mainy"
+  "mainy mainy"
+  "mainy mainy"
+  "aside1 aside1"
   "aside2 aside2"
   "footy footy";
 }
@@ -298,7 +287,7 @@ header {
     padding: 10px;
 }
 
-h1 {font-size: 2.2em;
+h1 {font-size: 2.7em;
     font-weight: 800;
   color: #FFD21F;
   -webkit-text-stroke: 1px #CC1F00;
@@ -365,7 +354,7 @@ header {
     padding: 10px;
 }
 
-h1 {font-size: 2.5em;
+h1 {font-size: 3em;
     font-weight: 800;
   color: #FFD21F;
   -webkit-text-stroke: 1px #CC1F00;

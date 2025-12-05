@@ -12,7 +12,7 @@
             <header>
               <nav>
               <h1>Universal Design for Digital Media</h1>
-              
+              <div class="menu-toggle">☰</div>
                 <ul>
                   <li><a href="https://katyrouault.github.io/KatyRouaultUniversalDesign.github.io/Universal-Design-Website.html">Home</a></li>
                   <li><a href="https://katyrouault.github.io/KatyRouaultUniversalDesign.github.io/why-page.html">Why</a></li>
@@ -72,5 +72,10 @@
                 <small>&copy; 2025</small>
               </footer>
             </div> <!-- end container -->
+            <script>
+              document.querySelector(".menu-toggle").onclick = () => {
+                document.querySelector("nav ul").classList.toggle("show");
+              };
+              </script>
     </body>
 </html>
