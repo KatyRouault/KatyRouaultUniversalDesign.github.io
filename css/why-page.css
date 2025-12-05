@@ -207,6 +207,13 @@ footer {grid-area: footy; background: rgb(228, 246, 255);}
     display: none;
     color: #0a164e;
   }
+  @media (min-width: 620px) {
+    .menu-toggle {
+      display: none !important;
+      visibility: hidden;
+      position: absolute;
+    }
+  }
   
 header, nav, main, aside, footer {
     padding: 1.5em;
@@ -334,7 +341,7 @@ nav ul li {
   width: 100vw;
   height: 100vw;
   grid-template-columns:
-   1fr       2.5fr;
+   1fr       2.5fr   1fr;
   grid-template-areas:
   "heady     heady     heady"
   "navvy     navvy     navvy"
@@ -351,8 +358,9 @@ nav {
 }
 
 header {
-    padding: 10px;
-}
+    padding: 10px !important;
+  }
+
 
 h1 {font-size: 3em;
     font-weight: 800;
@@ -369,7 +377,7 @@ nav {
     justify-content: space-between;
     padding: 0 10px;
     border-radius: 3em;
-    padding: 10px;
+    padding: 20px;
   }
 
 #aside1 .aside-content {
@@ -397,4 +405,13 @@ nav ul {
 nav ul li {
   list-style: none
 }
+h1 {
+    flex-shrink: 0; /* prevents H1 from shrinking when toggle appears */
+    white-space: nowrap; /* prevents H1 from breaking into multiple lines */
+  }
+  
+  /* ====== Nav tweaks for toggle ====== */
+  .menu-toggle {
+    flex-shrink: 0; /* prevents toggle from pushing H1 down */
+  }
 }
