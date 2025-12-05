@@ -95,7 +95,7 @@ aside p{
     font-size: 40px;
     color: #FFD21F;
     transition: 0.3s ease;
-    -webkit-text-stroke: 2px #8F1500; /* outline */
+    -webkit-text-stroke: 4px #8F1500; /* outline */
   }
   
 #star:hover {
