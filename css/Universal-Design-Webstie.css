@@ -170,6 +170,13 @@ main, aside{
         display: none;
         color: #0a164e;
       }
+      @media (min-width: 620px) {
+        .menu-toggle {
+          display: none !important;
+          visibility: hidden;
+          position: absolute;
+        }
+      }
       
     header, nav, main, aside, footer {
         padding: 1.5em;
@@ -180,13 +187,13 @@ main, aside{
         padding: 0;
       }
     
-    h1 {font-size: 2em;
+    h1 {font-size: 2.5em;
         font-weight: 800;
-      color: #FFD21F;
-      -webkit-text-stroke: 1px #CC1F00;
-      text-shadow:
+        color: #FFD21F;
+        -webkit-text-stroke: 1px #CC1F00;
+        text-shadow:
         0 0 4px rgba(0,0,0,.15),
-        1px 1px 0 #CC1F00;                 /* fill color */
+        1px 1px 0 #CC1F00;                
         }
     
         nav ul {
@@ -217,16 +224,13 @@ main, aside{
         padding: 5px;
     }
     
-    
     @media screen and (min-width: 620px) {
-    
-        /* 👇 ADD THESE LINES HERE */
         .menu-toggle {
           display: none;
         }
       
         nav ul {
-          display: flex !important;
+          display: flex;
           flex-direction: row;
           background: none;
           margin-top: 0;
@@ -252,7 +256,7 @@ main, aside{
         padding: 10px;
     }
     
-    h1 {font-size: 2.2em;
+    h1 {font-size: 2.7em;
         font-weight: 800;
       color: #FFD21F;
       -webkit-text-stroke: 1px #CC1F00;
@@ -299,7 +303,7 @@ main, aside{
       width: 100vw;
       height: 100vw;
       grid-template-columns:
-       1fr       2.5fr;
+       1fr       2.5fr   1fr;
       grid-template-areas:
       "heady     heady     heady"
       "navvy     navvy     navvy"
@@ -316,10 +320,11 @@ main, aside{
     }
     
     header {
-        padding: 10px;
-    }
+        padding: 10px !important;
+      }
     
-    h1 {font-size: 2.5em;
+    
+    h1 {font-size: 3em;
         font-weight: 800;
       color: #FFD21F;
       -webkit-text-stroke: 1px #CC1F00;
@@ -334,7 +339,7 @@ main, aside{
         justify-content: space-between;
         padding: 0 10px;
         border-radius: 3em;
-        padding: 10px;
+        padding: 20px;
       }
     
     #aside1 .aside-content {
@@ -362,4 +367,14 @@ main, aside{
     nav ul li {
       list-style: none
     }
+    h1 {
+        flex-shrink: 0; /* prevents H1 from shrinking when toggle appears */
+        white-space: nowrap; /* prevents H1 from breaking into multiple lines */
+      }
+      
+      /* ====== Nav tweaks for toggle ====== */
+      .menu-toggle {
+        flex-shrink: 0; /* prevents toggle from pushing H1 down */
+      }
     }
+    
