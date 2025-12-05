@@ -30,14 +30,6 @@ p {
   font-size: 1.2em;
 }
 
-h1 {font-size: 3.5em;
-    font-weight: 800;
-  color: #FFD21F;
-  -webkit-text-stroke: 1px #CC1F00;
-  text-shadow:
-    0 0 4px rgba(0,0,0,.15),
-    2px 2px 0 #CC1F00;                 /* fill color */
-    }
 
 h2 {font-size:2.0em;
     color: #0a164e;
@@ -147,13 +139,12 @@ ul li {
 
 
 nav {
-  display: flex;
+    display: flex;
   align-items: center;     /* centers logo + ul vertically */
   justify-content: space-between;
-  height: 70px;            /* fixed nav height */
   padding: 0 10px;
   border-radius: 3em;
-  padding: 50px;
+  padding: 20px;
 }
 
 nav a {
@@ -218,18 +209,28 @@ main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
 #aside2 {grid-area: aside2; background: rgb(191, 235, 255);}
 footer {grid-area: footy; background: rgb(228, 246, 255);}
 
-nav img {
-  height: auto;
-  width: 80px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+nav {
+    padding: 5px;
+    margin: 5px;
 }
+header {
+    padding: 5px;
+}
+h1 {font-size: 2em;
+    font-weight: 800;
+  color: #FFD21F;
+  -webkit-text-stroke: 1px #CC1F00;
+  text-shadow:
+    0 0 4px rgba(0,0,0,.15),
+    1px 1px 0 #CC1F00;                 /* fill color */
+    }
 
 nav ul {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;     
   justify-content: right;
-  gap: 10px;
+  gap: 0px;
   margin: 0;
   padding: 0;
   
@@ -237,6 +238,12 @@ nav ul {
 
 nav ul li {
   list-style: none
+}
+
+nav a {
+    font-size: 1em;
+    margin: 0px;
+    padding: 5px;
 }
 
 
@@ -252,6 +259,33 @@ grid-template-areas:
   "aside2 aside2"
   "footy footy";
 }
+nav {
+    padding: 10px;
+    margin: 5px;
+}
+
+header {
+    padding: 10px;
+}
+
+h1 {font-size: 2.2em;
+    font-weight: 800;
+  color: #FFD21F;
+  -webkit-text-stroke: 1px #CC1F00;
+  text-shadow:
+    0 0 4px rgba(0,0,0,.15),
+    2px 1px 0 #CC1F00;                 /* fill color */
+    }
+
+nav {
+    display: flex;
+    align-items: center;     /* centers logo + ul vertically */
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 3em;
+    padding: 20px;
+  }
+
 nav img{
   height: auto;
   width: 90px;
@@ -263,7 +297,7 @@ nav ul {
   flex-flow: row nowrap;
   align-items: center;     
   justify-content: right;
-  gap: 20px;
+  gap: 2px;
   margin: 0;
   padding: 0;
   
@@ -291,6 +325,33 @@ nav ul li {
   "aside2    aside2    aside2"
   "footy     footy     footy";
 }
+
+nav {
+    padding: 10px;
+    margin: 5px;
+}
+
+header {
+    padding: 10px;
+}
+
+h1 {font-size: 2.5em;
+    font-weight: 800;
+  color: #FFD21F;
+  -webkit-text-stroke: 1px #CC1F00;
+  text-shadow:
+    0 0 4px rgba(0,0,0,.15),
+    2px 2px 0 #CC1F00;                 /* fill color */
+    }
+
+nav {
+    display: flex;
+    align-items: center;     /* centers logo + ul vertically */
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 3em;
+    padding: 10px;
+  }
 
 #aside1 .aside-content {
     position: sticky;
