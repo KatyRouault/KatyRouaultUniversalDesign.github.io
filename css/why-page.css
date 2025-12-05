@@ -210,7 +210,7 @@ main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
 footer {grid-area: footy; background: rgb(228, 246, 255);}
 
 nav {
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
 }
 header {
