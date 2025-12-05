@@ -95,7 +95,7 @@ aside p{
     font-size: 40px;
     color: #FFD21F;
     transition: 0.3s ease;
-    -webkit-text-stroke: 2px #CC1F00; /* outline */
+    -webkit-text-stroke: 2px #8F1500; /* outline */
   }
   
 #star:hover {
@@ -190,10 +190,10 @@ main, aside{
     h1 {font-size: 2.5em;
         font-weight: 800;
         color: #FFD21F;
-        -webkit-text-stroke: 1px #CC1F00;
+        -webkit-text-stroke: 1px #8F1500;
         text-shadow:
         0 0 4px rgba(0,0,0,.15),
-        1px 1px 0 #CC1F00;                
+        1px 1px 0 #8F1500;                
         }
     
         nav ul {
@@ -259,10 +259,10 @@ main, aside{
     h1 {font-size: 2.7em;
         font-weight: 800;
       color: #FFD21F;
-      -webkit-text-stroke: 1px #CC1F00;
+      -webkit-text-stroke: 1px #8F1500;
       text-shadow:
         0 0 4px rgba(0,0,0,.15),
-        2px 1px 0 #CC1F00;                 /* fill color */
+        2px 1px 0 #8F1500;                 /* fill color */
         }
     
     nav {
@@ -327,10 +327,10 @@ main, aside{
     h1 {font-size: 3em;
         font-weight: 800;
       color: #FFD21F;
-      -webkit-text-stroke: 1px #CC1F00;
+      -webkit-text-stroke: 1px #8F1500;
       text-shadow:
         0 0 4px rgba(0,0,0,.15),
-        2px 2px 0 #CC1F00;                 /* fill color */
+        2px 2px 0 #8F1500;                 /* fill color */
         }
     
     nav {

@@ -89,7 +89,7 @@ main {
     font-size: 40px;
     color: #FFD21F;
     transition: 0.3s ease;
-    -webkit-text-stroke: 2px #CC1F00; /* outline */
+    -webkit-text-stroke: 2px #8F1500; /* outline */
   }
   
 #star:hover {
@@ -101,7 +101,7 @@ main {
     margin: 8px;
     color: #FFD21F;
     transition: 0.3s ease;
-    -webkit-text-stroke: 2px #CC1F00; /* outline */
+    -webkit-text-stroke: 2px #8F1500; /* outline */
   }
   
 #bullet:hover {
@@ -195,7 +195,7 @@ grid-template-areas:
 }
 
 header {grid-area: heady; background:rgb(26, 140, 211);}
-nav {grid-area: navvy; background:rgb(191, 235, 255);}
+nav {grid-area: navvy; background:#bfebff;}
 main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
 #aside1 {grid-area: aside1; background: rgb(228, 246, 255);}
 #aside2 {grid-area: aside2; background: rgb(191, 235, 255);}
@@ -227,10 +227,10 @@ header, nav, main, aside, footer {
 h1 {font-size: 2.5em;
     font-weight: 800;
     color: #FFD21F;
-    -webkit-text-stroke: 1px #CC1F00;
+    -webkit-text-stroke: 1px #8F1500;
     text-shadow:
     0 0 4px rgba(0,0,0,.15),
-    1px 1px 0 #CC1F00;                
+    1px 1px 0 #8F1500;                
     }
 
     nav ul {
@@ -297,10 +297,10 @@ header {
 h1 {font-size: 2.7em;
     font-weight: 800;
   color: #FFD21F;
-  -webkit-text-stroke: 1px #CC1F00;
+  -webkit-text-stroke: 1px #8F1500;
   text-shadow:
     0 0 4px rgba(0,0,0,.15),
-    2px 1px 0 #CC1F00;                 /* fill color */
+    2px 1px 0 #8F1500;                 /* fill color */
     }
 
 nav {
@@ -365,10 +365,10 @@ header {
 h1 {font-size: 3em;
     font-weight: 800;
   color: #FFD21F;
-  -webkit-text-stroke: 1px #CC1F00;
+  -webkit-text-stroke: 1px #8F1500;
   text-shadow:
     0 0 4px rgba(0,0,0,.15),
-    2px 2px 0 #CC1F00;                 /* fill color */
+    2px 2px 0 #8F1500;                 /* fill color */
     }
 
 nav {
