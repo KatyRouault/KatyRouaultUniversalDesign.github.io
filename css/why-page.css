@@ -67,11 +67,21 @@ footer {
   /*border: 1px rgb(195, 195, 195) solid;*/
 }
 
-main, aside{
-    padding-left: 80px;
-    padding-right: 80px;
-    margin-left: 30px;
+main {
+    padding-left: 30px;
+    padding-right: 30px;
     margin-right: 30px;
+}
+
+#aside2{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#aside1 {
+    margin-left: 30px;
 }
 
 
@@ -174,6 +184,7 @@ grid-template-areas:
   "heady"
   "navvy"
   "mainy"
+  "aside1"
   "aside2"
   "footy";
 }
@@ -181,6 +192,7 @@ grid-template-areas:
 header {grid-area: heady; background:rgb(26, 140, 211);}
 nav {grid-area: navvy; background:rgb(191, 235, 255);}
 main {grid-area: mainy; background: rgb(228, 246, 255); max-height: 100%;}
+#aside1 {grid-area: aside1; background: rgb(228, 246, 255);}
 #aside2 {grid-area: aside2; background: rgb(191, 235, 255);}
 footer {grid-area: footy; background: rgb(228, 246, 255);}
 
@@ -213,7 +225,8 @@ grid-template-columns:
 grid-template-areas:
   "heady heady"
   "navvy navvy"
-  "mainy mainy"
+  "aside1 mainy"
+  "aside1 mainy"
   "aside2 aside2"
   "footy footy";
 }
@@ -246,13 +259,13 @@ nav ul li {
   width: 100vw;
   height: 100vh;
   grid-template-columns:
-   1fr       2.5fr       1fr;
+   1fr       2.5fr;
   grid-template-areas:
   "heady     heady     heady"
   "navvy     navvy     navvy"
-  "mainy    mainy     mainy"
-  "mainy    mainy     mainy"
-  "mainy    mainy     mainy"
+  "aside1    mainy     mainy"
+  "aside1    mainy     mainy"
+  "aside1    mainy     mainy"
   "aside2    aside2    aside2"
   "footy     footy     footy";
 }
